@@ -1,0 +1,21 @@
+section : #live_events
+|_  event ID : div .data-share-url, get # between "ticket-" and """
+|_  url : div .data-share-url
+    |_ a
+        |_  div .list-card__header
+            |_  thumbnail image : div img .list-card__image
+        |_  div .list-card__body
+            |_  date/time : time .list-card__date
+            |_  title : div .list-card__title
+            |_  location : div .list-card__venue
+
+section : #past_events
+|_  event ID : div .data-share-url, get # between "ticket-" and """
+|_  url : div .data-share-url
+    |_ a
+        |_  div .list-card__header
+            |_  thumbnail image : div img .list-card__image
+        |_  div .list-card__body
+            |_  date/time : time .list-card__date
+            |_  title : div .list-card__title
+            |_  location : div .list-card__venue
